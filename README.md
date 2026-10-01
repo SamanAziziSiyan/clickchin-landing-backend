@@ -52,7 +52,7 @@ No approved screenshot or public demo is included. Use synthetic data and rights
 
 ## Security
 
-The public export requires Sanctum authentication and checks ownership for landing and component CRUD. The server assigns owner IDs. Current locked dependencies still have six advisories across Laravel, php-jwt, and laravel-mediable, including a high-severity mediable path traversal advisory; upgrade the affected dependency families before release. Historical database credentials in the original repository require rotation if used.
+The public export requires Sanctum authentication and checks ownership for landing and component CRUD. The server assigns owner IDs. The checked-in dependency constraints still require a security upgrade/re-audit before this snapshot should be treated as production-ready. In particular, the pinned Laravel/Mediable dependency family should be reviewed against current security advisories before operational use. Historical database credentials in the original repository require rotation if used.
 
 ## Limitations
 
